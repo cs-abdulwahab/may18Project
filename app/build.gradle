@@ -48,6 +48,13 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-core:15.0.0'
 
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+
 }
 
 apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'io.objectbox' // after applying Android plugin
+

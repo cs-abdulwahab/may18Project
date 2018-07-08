@@ -50,6 +50,7 @@ public class RetroActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Dummy> call, Response<Dummy> response) {
                 Log.d(TAG, "onResponse: ");
+                String s = ";";
             }
 
             @Override

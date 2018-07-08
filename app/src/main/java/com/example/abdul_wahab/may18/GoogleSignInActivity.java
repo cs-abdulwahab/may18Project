@@ -38,7 +38,13 @@ public class GoogleSignInActivity extends AppCompatActivity {
                 new AuthUI.IdpConfig.GoogleBuilder().build()
         );
 
-
+        startActivityForResult(
+                AuthUI.getInstance()
+                        .createSignInIntentBuilder()
+                        .setAvailableProviders(providers)
+                        .setIsSmartLockEnabled(false, true)
+                        .build(),
+                RC_SIGN_IN);
         if (FirebaseAuth.getInstance() == null) {
             Log.d(TAG, "onCreate: null hai");
             // Create and launch sign-in intent
@@ -50,7 +56,8 @@ public class GoogleSignInActivity extends AppCompatActivity {
                             .build(),
                     RC_SIGN_IN);
         } else {
-            Log.d(TAG, "onCreate: already running" + FirebaseAuth.getInstance().getCurrentUser());
+            Log.d(TAG, "onCreate: already running " + FirebaseAuth.getInstance().getCurrentUser());
+            Log.d(TAG, "onCreate: already running... " + FirebaseAuth.getInstance());
         }
         //
 //        Intent signInIntent = mGoogleSignInClient.getSignInIntent();

@@ -5,12 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.MotionEvent;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SecondActivity extends AppCompatActivity {
 
+    private static final String TAG = "MTAG";
     List<Node> nodeList;
 
     @Override
@@ -24,13 +27,11 @@ public class SecondActivity extends AppCompatActivity {
             nodeList.add(new Node("name " + i, "url " + i));
         }
 
-
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
 
         recyclerView.setAdapter(new NodeAdapter(nodeList));
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false));
-
 
 
 

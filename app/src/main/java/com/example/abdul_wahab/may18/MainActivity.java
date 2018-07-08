@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DatabaseReference mDatabaseRef;
 
-    FirebaseFirestore db;
+    private FirebaseFirestore db;
 
 
     private ImageView imgPreview;

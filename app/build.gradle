@@ -25,7 +25,6 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-
     implementation 'com.google.firebase:firebase-auth:11.6.0'
     implementation 'com.google.firebase:firebase-storage:11.6.0'
     implementation 'com.google.firebase:firebase-firestore:11.6.0'
@@ -42,14 +41,21 @@ dependencies {
     api 'org.greenrobot:eventbus:3.1.1'
     //implementation 'com.google.android.gms:play-services:12.0.1'
     implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
     implementation 'com.google.android.gms:play-services-location:15.0.1'
     implementation 'com.google.android.gms:play-services-places:15.0.1'
     implementation 'com.google.android.gms:play-services-nearby:15.0.1'
-
     implementation 'com.google.firebase:firebase-core:15.0.0'
-
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    //implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'pub.devrel:easypermissions:1.2.0'
+    implementation "commons-io:commons-io:+"
+    implementation 'com.github.nileshpambhar:MultiPhotoPicker:v1.2'
+implementation 'com.github.codekidX:storage-chooser:2.0.3'
 
 
 }
